@@ -118,7 +118,7 @@ jobs:
           7z.exe x lua.zip -olua
           git clone https://github.com/lunarmodules/luasocket --depth 1
           cd luasocket/
-          cp ../lua/lua53.lib .
+          cp ../lua/lua54.lib .
           cd src/
           cp ../../lua/include/lua.h .
           cp ../../lua/include/luaconf.h .
