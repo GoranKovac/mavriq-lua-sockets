@@ -116,7 +116,7 @@ jobs:
         run: |
           curl -sSL -o lua.zip https://sourceforge.net/projects/luabinaries/files/5.4.2/Windows%20Libraries/Static/lua-5.4.2_Win64_vc16_lib.zip
           7z.exe x lua.zip -olua
-          git clone https://github.com/lunarmodules/luasocket --depth 1
+          git clone https://github.com/GoranKovac/luasocket --depth 1
           cd luasocket/
           cp ../lua/lua54.lib .
           cd src/
