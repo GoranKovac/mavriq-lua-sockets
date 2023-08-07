@@ -90,7 +90,7 @@ jobs:
           security unlock-keychain -p abcd1234 build.keychain
           security import certificate.p12 -k build.keychain -P $MACOS_CERTIFICATE_PWD -T /usr/bin/codesign
           security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k abcd1234 build.keychain
-          /usr/bin/codesign --force -s 45VRR5GY44 luasocket/src/core.so -v
+          /usr/bin/codesign --force -s "Developer ID Application: Geoff Van Brunt (45VRR5GY44)" luasocket/src/core.so -v
 
       - name: Collect files
         run: |
