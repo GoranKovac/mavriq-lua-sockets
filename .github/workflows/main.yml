@@ -111,8 +111,8 @@ jobs:
     runs-on:  windows-2022
 
     steps:
-      - name: Build lua static
       - uses: ilammy/msvc-dev-cmd@v1
+      - name: Build lua static
         run: |
           curl -sSL -o lua.tar.gz https://www.lua.org/ftp/lua-5.4.6.tar.gz
           tar -xvf lua.tar.gz 
