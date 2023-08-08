@@ -120,10 +120,10 @@ jobs:
           cl /MD /O2 /c /DLUA_BUILD_AS_DLL *.c
           ren lua.obj lua.o
           ren luac.obj luac.o
-          link /DLL /IMPLIB:lua5.4.6.lib /OUT:lua5.4.6.dll *.obj
-          link /OUT:lua.exe lua.o lua5.4.6.lib
+          #link /DLL /IMPLIB:lua5.4.6.lib /OUT:lua5.4.6.dll *.obj
+          #link /OUT:lua.exe lua.o lua5.4.6.lib
           lib /OUT:lua54.lib *.obj
-          link /OUT:luac.exe luac.o lua54.lib
+          #link /OUT:luac.exe luac.o lua54.lib
           
       - name: Build luasockets
         run: |
